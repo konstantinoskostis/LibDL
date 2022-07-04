@@ -1,0 +1,40 @@
+AllCops:
+  Exclude:
+    - 'libml.gemspec'
+    - 'bin/**/*'
+    - 'spec/**/*'
+    - 'Rakefile'
+    - 'Gemfile'
+
+Gemspec/RequiredRubyVersion:
+  Enabled: false
+
+Metrics/AbcSize:
+  Max: 51
+
+Metrics/CyclomaticComplexity:
+  Max: 21
+
+Metrics/MethodLength:
+  Max: 50
+
+Metrics/ParameterLists:
+  Max: 15
+
+Metrics/PerceivedComplexity:
+  Max: 24
+
+Naming/MethodParameterName:
+  MinNameLength: 1
+
+Style/SoleNestedConditional:
+  Enabled: false
+
+Style/GuardClause:
+  Enabled: false
+
+Style/ModuleFunction:
+  Enabled: false
+
+Style/RedundantSelf:
+  Enabled: false
