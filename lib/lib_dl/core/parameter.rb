@@ -10,7 +10,9 @@ module LibDL
 
     def initialize(data)
       @data = data
-      @grad = LibDL.zeros_like(data)
+      @data = LibDL.tensor(@data) unless @data.is_a?(LibDL::Tensor)
+
+      @grad = LibDL.zeros_like(@data)
     end
   end
 end
