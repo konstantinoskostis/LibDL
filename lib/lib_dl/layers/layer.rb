@@ -8,7 +8,11 @@ module LibDL
     end
 
     def backward
-      raise NotImplementedError, 'Subclasses must implement forward'
+      raise NotImplementedError, 'Subclasses must implement backward'
+    end
+
+    def parameters
+      []
     end
   end
 
