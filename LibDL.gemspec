@@ -25,6 +25,7 @@ Gem::Specification.new do |spec|
   spec.require_paths = ['lib']
 
   spec.add_development_dependency 'pry-byebug', '~> 3.9.0'
+  spec.add_development_dependency 'rspec', '~> 3.0'
   spec.add_development_dependency 'rubocop', '~> 1.24.0'
   spec.add_development_dependency 'solargraph', '~> 0.44.2'
 end
