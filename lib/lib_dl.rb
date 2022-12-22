@@ -10,6 +10,8 @@ require 'lib_dl/core/tensor_ops'
 
 require 'lib_dl/core/creation_ops'
 
+require 'lib_dl/core/variable'
+
 require 'lib_dl/core/parameter'
 
 require 'lib_dl/initializers/base'

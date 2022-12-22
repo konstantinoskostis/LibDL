@@ -10,12 +10,16 @@ module LibDL
       @in_features = in_features
       @out_features = out_features
 
-      @weight = [] # Parameter object with in/out features
-
-      @bias = nil
-
+      @weight = LibDL.zeros(@in_features, @out_features) # Parameter object with in/out features
       @bias = 1 if bias
+
+      reset_parameters()
     end
+
+    # Initialize weeight and bias parameters
+    #
+    # @return [void]
+    def reset_parameters(); end
 
     # Run the forward computation given an input
     #

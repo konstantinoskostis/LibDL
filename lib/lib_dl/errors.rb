@@ -22,5 +22,12 @@ module LibDL
         super(msg)
       end
     end
+
+    class VariableError < Error
+      def initialize(v)
+        msg = "#{v} is not of type 'Variable'"
+        super(msg)
+      end
+    end
   end
 end
